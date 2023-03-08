@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>&lt;HTML for All&gt;</title>
+    <style>
+      
+    </style>
+  </head>
+  <body style="background-color: #ffeee6;
+               color: #cc4400">
+    
+    <figure>
+      <a href="https://en.wikipedia.org/wiki/HTML">
+      <img width="100"
+           height="100"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+      >
+      </a>
+      <figcaption>HTML5's Offical Logo</figcaption>
+    </figure>
+    
+    <h1>Welcome</h1>
+    <p>
+      HTML is a simple markup language for web browsers.</p><p
+      >It defines the structure of a web page and used with CSS and JavaScript to make an interactive and beautiful website.
+    </p>
+    
+    <h2>The Basics</h2>
+    <p>
+      HTML is easy to write. It's made up of <strong>tags</strong> and <strong>attributes</strong>.</p><p>
+      Tags in HTML are also known as elements. These are the basic buidling blocks of the website.
+    </p><p
+    >Most HTML tags are written like this:</p>
+    <code>
+      &lt;tagname&gt;&lt;/tagname&gt;
+    </code>
+    
+    <p>The most important element is the &lt;!DOCTYPE html&gt; element.</p><p
+    >This tag tells the browser that the file is a HTML file. The next element is the &lt;html&gt; tag. This tag tells the browser where the actual HTML is.</p>
+    
+    <p>Most HTML files when starting out will look like this.</p>
+    <code>
+      &lt;!DOCTYPE html&gt;<br>
+      &lt;html&gt;<br>
+      &lt;/html&gt;
+    </code>
+    
+    <p>The two next important tags are the &lt;head&gt; and the &lt;body&lt; tags.</p>
+    <p>The head tag contains metadata for the HTML file. Including the website's title.</p>
+    <p>To set up a website's title, we use the &lt;title&gt; tag.</p>
+    <code>&lt;title&gt;Document&lt;/title&gt;</code>
+    
+    <p>The head tag is also used to link the document to other files. Like CSS and JS files.</p>
+    
+    <p>But for now, let's focus on body tag. The &lt;p&gt; and the &lt;h<var>n</var>&gt; are used to create paragraphs and header.</p>
+    
+    <p>The paragraph tag (&lt;p&gt;) simply renders text.</p>
+    <p>The header tag (&lt;h<var>n</var>&gt;) is used to create a header of <var>n</var>(1-6) level.</p>
+    
+    <p>Examples.</p>
+    <code>&lt;h1&gt;I am a header!&lt;/h1&gt;</code>
+    <code>&lt;p&gt;I am a paragraph!&lt;/p&gt;</code>
+    
+    <p>Output:</p>
+    <h1>I am a header!</h1>
+    <p>I am a paragraph!</p>
+    
+    <p>Text can be <b>bolded</b> and <i>italicized</i> using the &lt;b&gt; and &lt;i&gt; tags.</p>
+    
+    <p>Examples:</p>
+    <code>&lt;b&gt;BOLD!&lt;/b&gt;</code>
+    <code>&lt;i&gt;SLANTED!&lt;/i&gt;</code>
+    
+    <p>Output</p>
+    <b>BOLD!</b>
+    <i>SLANTED!</i>
+    
+    <h2>Attributes, Links, and Images</h2>
+    <p>Images are placed onto a HTML document using the &lt;img&gt; tag.</p>
+    <p>But in order to link a image, we use the src attribute. Attributes are more information that allows the browser to know how to format the element.</p>
+    
+    <p>We use the width and height attribute to resize an image.</p>
+    
+    <p>Example</p>
+    <code>&lt;img width="100" height="100" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C"&gt;</code>
+    
+    <p>Output</p>
+    <img width="100" height="100" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C">
+    
+    <p>Many websites are linked via &lt;a&gt; tags. We set the link we want to visit in the href attribute.</p>
+    <code>&lt;a href="https://www.wikipedia.org/">Link Text&lt;/a&gt;</code>
+    
+    <p>Output</p>
+    <a href="https://www.wikipedia.org/">Link Text</a>
+
+    <p>Links and &lt;a&gt; tags are powerful!</p>
+    
+    <h2>Quick Reference</h2>
+    <p>Below is commonly used HTML elements.</p>
+    <table>
+      <tr>
+        <th>Tag Name</th>
+        <th>Use</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>Defines the document as a HTML document.</td>
+        <td>&lt;!DOCTYPE html&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;html&gt;</td>
+        <td>Root of HTML document.</td>
+        <td>&lt;html&gt;&lt;/html&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;head&gt;</td>
+        <td>Contains metadata about the website.</td>
+        <td>&lt;head&gt;&lt;/head&gt;</td>
+      </tr>
+      
+      <tr>
+        <td>&lt;body&gt;</td>
+        <td>Contains the content of the website.</td>
+        <td>&lt;body&gt;&lt;/body&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;h<var>n</var>&gt;</td>
+        <td>For headers in documents.
+        <var>n</var> is the header level, ranging from 1 to 6.</td>
+        <td>&lt;h1&gt;Hello!&lt;/h1&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>For paragraphs</td>
+        <td>&lt;p&gt;This is a nice website.&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;b&gt;</td>
+        <td>Inline element for <b>bold</b> text.</td>
+        <td>&lt;b&gt;Hi.&lt;/b&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>Used to insert images.</td>
+        <td>&lt;img src="image.png"&gt;</td>
+      </tr>
+    </table>
+
+    <footer>
+      <a href="https://www.w3schools.com/html/default.asp">Learn more HTML</a>
+      <a href="mailto:someone@example.com">Email Me!</a>
+    </footer>
+  </body>
+</html>
